@@ -46,7 +46,7 @@ Both approaches require you to concatenate characters to the reversed string `re
 
 #### Solution 2: 
 
-We can use Java's StringBuilder class which has a default reverse method. 
+We can use Java's [StringBuilder](https://docs.oracle.com/javase/tutorial/java/data/buffers.html) class which has a default reverse method. StringBuilder objects are like String object except that they can be modified.
 
 
 ```java 
