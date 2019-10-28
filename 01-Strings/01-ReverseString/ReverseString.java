@@ -1,4 +1,4 @@
-public class Main {
+public class ReverseString {
     public static void main(String[] args) {
       reverseString("Hello world!");
     }
