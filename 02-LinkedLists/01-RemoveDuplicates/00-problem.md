@@ -1,6 +1,6 @@
 ### Problem:
 
-Write a function to remove duplicates from an unsorted linked list.
+Write a function to remove duplicates from an unsorted singly linked list.
 
 ### Part 2:
 
