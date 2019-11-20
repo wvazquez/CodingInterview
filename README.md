@@ -7,7 +7,7 @@ All answers and resources will be written in Java and Javascript.
 
 
 ## Chapters
-
+* 00 - Numbers
 * 01 - Strings
 * 02 - Arrays
 * 03 - Hashmaps
