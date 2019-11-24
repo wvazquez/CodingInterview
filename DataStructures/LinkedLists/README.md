@@ -17,9 +17,6 @@ A linked list is represented by a chain of nodes that are connected or linked to
 
 In order to keep track of what the start of the linked list, we assign the first node a name of `head`. Sometimes you will also see the last node of a linked list named `tail`. The last node will always point to null to let us know we have reached the end of the linked list UNLESS we are creating a circular linked list. This means the last node points to the first node creating a circle. More on that later..
 
-### Functions of a Linked List
-
-We can add or remove items to the head or tail of a linked lists. These operations are constant time `O(1)` which is extremely fast. Searching for an element in a linked list on the otherhand is slow because we need to iterate through each node of a linked list. This operation takes linear time `O(n)`. 
 
 [What is a linked list - Basic Overview](https://www.educative.io/edpresso/what-is-a-linked-list)
 
@@ -27,12 +24,48 @@ We can add or remove items to the head or tail of a linked lists. These operatio
 
 Previously we mentioned that a node contains two things, the data and a pointer to the next node. This type of linked list is called a singularly linked list. When we iterate through the linked list we can only move one direction because we only have the pointer to the next node. We can instead create a node that holds the data, the pointer to the next node AND a pointer to the previous node. This is called a doubly linked list. This allows us to iterate through a linked list both forwards and backwards, but this also means we need to maintain two pointers which takes up more space in memory. 
 
+### Functions of a Linked List
+
+We can add or remove items to the head or tail of a linked lists. Most of the time these operations are constant time `O(1)` which is extremely fast. Searching for an element in a linked list on the otherhand is slow because we need to iterate through each node of a linked list. This operation takes linear time `O(n)`. 
+
+In a singularly linked list (without a pointer to the tail)
+* Search Time: `O(n)`
+* Insertion Time (in head): `O(1)`
+* Insertion Time (in tail): `O(n)`
+* Deletion Time (in head): `O(1)`
+* Deletion Time (in tail): `O(n)` 
+
+In a singularly linked list (with a pointer to the tail)
+* Search Time: `O(n)`
+* Insertion Time (in head): `O(1)`
+* Insertion Time (in tail): `O(1)` 
+* Deletion Time (in head): `O(1)`
+* Deletion Time (in tail): `O(n)`
+
+In a doubly linked list (without a pointer to the tail)
+* Search Time: `O(n)`
+* Insertion Time (in head): `O(1)`
+* Insertion Time (in tail): `O(n)` 
+* Deletion Time (in head): `O(1)`
+* Deletion Time (in tail): `O(n)` 
+
+In a doubly linked list (with a pointer to the tail)
+* Search Time: `O(n)`
+* Insertion Time (in head): `O(1)`
+* Insertion Time (in tail): `O(1)` 
+* Deletion Time (in head): `O(1)`
+* Deletion Time (in tail): `O(1)`
+
+As we can see, we can have faster runtimes with a doubly linked list with a tail pointer. Either way, most of the time we talk about a linked list, you will usually hear insertion and deletion time to be `O(1)` time.
+
 
 * [Applications of a linked list](https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/)
 * [Linked Lists in Javascript](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
 * [Linked Lists in Java](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html)
 
 ### Things to remember
+Linked list is a linear data structure. 
+You can have a singulary or doubly linked list. (You can also have a circular linked lists).
 
 * Search Time: `O(n)`
 * Insertion Time: `O(1)`
