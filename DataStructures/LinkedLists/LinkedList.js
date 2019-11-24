@@ -1,4 +1,11 @@
 /**
+ * Implementation of a doubly linked list
+ * @author Wilmer Vazquez
+ */
+
+
+
+/**
  * Node class constains data, a pointer to the next node, and a pointer to the previous node.
  */
 class Node{

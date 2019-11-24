@@ -4,7 +4,7 @@ Linked Lists are linear data structures. What does *THAT* mean?
 
 Data structures are ways of storing, organizing, and managing data. We are always looking for an optimal way to search and manipulate data, and depending on the problem we are trying to solve, we use data structures to try to achieve this. So a linear data structure is simply a collection of data stored and accessed/traversed in a sequential order. An example of a linear data structure is an array.
 
-Linked list are useful for their fast insertion and deletion time of an element.
+Linked lists are useful for their fast insertion and deletion time of an element.
 
 * [What are data structures](https://news.codecademy.com/why-data-structures/)
 * [Linear vs Non-Linear](https://techdifferences.net/wp-content/uploads/2019/06/datasturcture-classification.jpg)

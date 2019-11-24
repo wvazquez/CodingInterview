@@ -77,6 +77,3 @@ public class Main {
         System.out.println(list.toString());
     }
 }
-
-// O -> O -> O
-// ^head
