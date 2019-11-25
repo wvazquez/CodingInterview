@@ -1,6 +1,7 @@
 /**
  * Implementation of a doubly linked list
  * @author Wilmer Vazquez
+ * 
  */
 
 
@@ -89,9 +90,29 @@ class LinkedList{
         }
         this.size--;
     }
+    /**
+     * 
+     * if no index is passed, or index is out of bounds, return null
+     * else iterate through linked list until i === index
+     *      return data at that index.
+     */
+    getValue(index = -1){
+      if(index < 0 || index >= this.size){
+        return null;
+      }
+      let i = 0;
+      let current = this.head;
+      while(i <= index && current !== null){
+        if(i === index){
+          return current.data;
+        }
+        i++;
+        current = current.next;
+      }
+    }
 
     /**
-     * Helper function to output data
+     * Helper functions
      */
     printAll(){
         let output = "";
@@ -101,8 +122,12 @@ class LinkedList{
           current = current.next;
         }
         output += "null";
-        console.log(output)
+        return output;
     }
+    getSize(){
+      return this.size;
+    }
+
 }
 
 

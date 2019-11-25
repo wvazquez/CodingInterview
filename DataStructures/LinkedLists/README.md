@@ -58,10 +58,19 @@ In a doubly linked list (with a pointer to the tail)
 
 As we can see, we can have faster runtimes with a doubly linked list with a tail pointer. Either way, most of the time we talk about a linked list, you will usually hear insertion and deletion time to be `O(1)` time.
 
-
 * [Applications of a linked list](https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/)
 * [Linked Lists in Javascript](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
 * [Linked Lists in Java](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html)
+
+
+### LinkedLists in Javascript
+
+Linked lists aren’t something you’re likely to use every day, but they are a foundational data structure in computer science. The concept of using nodes that point to one another is used in many other data structures are built into many higher-level programming languages. A good understanding of how linked lists work is important for a good overall understanding of how to create and use other data structures.
+
+For JavaScript programming, you are almost always better off using the built-in collection classes such as Array rather than creating your own. The built-in collection classes have already been optimized for production use and are well-supported across execution environments.
+
+* [Linked Lists in Javascript - Advanced](https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/)
+
 
 ### Things to remember
 Linked list is a linear data structure. 
