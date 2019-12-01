@@ -40,3 +40,54 @@ This `fib(n,memo)` function will check to see if a value is stored in our cache,
 
 * [Method Overloading](https://beginnersbook.com/2013/05/method-overloading/)
 
+
+#### Iterative Solution
+
+Instead of using recursion, we can also use an iterative solution where we continue calculating the fibonacci sequence until we reach position `n`.
+
+```java
+
+public static int fib(int n){
+    if(n==1){
+      return 0;
+    }else if(n==2){
+      return 1;
+    }
+    int sequence[] = new int[n];  
+    sequence[0] = 0;
+    sequence[1] = 1;
+
+    for(int i = 2; i < n; i++){
+      sequence[i]= sequence[i-1] + sequence[i-2];
+    }
+    return sequence[sequence.length-1];
+}
+```
+This solutions has
+* Time Complexity: `O(n)` 
+* Space Complexity: `O(n)`
+
+The problem with our solution is that it requires `O(n)` space to store the array containing the fibonacci sequence. If we analyze the problem carefully, we do not need all of the integers in the sequence, only the elements `n-2, n-1` and the position n we are looking for. We can modify our algorithm to only store the integers we need. 
+
+```java
+ public static int fib(int n){
+    
+    int sequence[] = {0,1};  
+    if(n==1 || n==2){
+      return sequence[n-1];
+    }
+
+    int nextNumber;
+
+    for(int i = 3; i <= n; i++){
+        nextNumber = sequence[0] + sequence[1];
+        sequence[0] = sequence[1];
+        sequence[1] = nextNumber;
+    }
+    return sequence[1];
+  }
+```
+In this final solution, we no longer store all the integers in the sequence. We now only store 2 integers in our array, so we can say that the Space Complexity is `O(2)` which in Big-O Notation is simply linear `O(1)`.
+This solutions has:
+* Time Complexity: `O(n)` 
+* Space Complexity: `O(1)`

@@ -74,6 +74,14 @@ This is a significant improvement from our previous solution. Looking back at ou
               /   \
     fib(2)-cache  fib(1)-cache   
 
+```
+
+*** Please See Java or Javascript folder for implementation as they differ significantly***
 
 
-*** Please See Java or Javascript folder for implementation as they dsiffer significantly***
+#### Iterative Solution
+
+Instead of using recursion, we can also use an iterative solution where we continue calculating the fibonacci sequence until we reach position `n`.
+
+
+*** Please See Java or Javascript folder for implementation as they differ significantly***
