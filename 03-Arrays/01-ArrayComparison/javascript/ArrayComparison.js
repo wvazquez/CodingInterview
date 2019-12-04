@@ -46,7 +46,7 @@ function arraycompare2(arr1, arr2){
       freq2[arr2[i]] = (freq2[arr2[i]] || 0) + 1;
     }
     //O(N)
-    for(key in freq1){
+    for(const key in freq1){
       if(!(key**2 in freq2) || freq1[key] !== freq2[key**2]){
         return false;
       }
