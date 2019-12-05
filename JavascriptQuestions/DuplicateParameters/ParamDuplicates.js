@@ -1,6 +1,6 @@
 function paramDuplicates(){
     let uniqueparams = {};
-    for(index in arguments){
+    for(let index in arguments){
       if(uniqueparams[arguments[index]]){
         return true;
       }else{
