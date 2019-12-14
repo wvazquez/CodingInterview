@@ -68,7 +68,7 @@ To achieve this we can use a for loop:
   }
 
 ```
-Here we are iterating through each letter of our string. We will populate our object `freq1` storing the amount of time a letter appears in the string (frequency). 
+Here we are iterating through each letter of our string. We will populate our object `freq1` storing the amount of times a letter appears in the string (frequency). 
 
 For Example:
 ```js
@@ -76,7 +76,7 @@ For Example:
 
 let key = str1[i]; //this will represent each letter as we iterate through the string
 
-freq[key] =  //will look for that key/letter in the object if it exists. If it doesnt exists it will create that key with a value of undefined
+freq[key] =  //will look for that key/letter in the object if it exists. If it doesnt exist it will create that key with a value of undefined
 
 (freq[key] || 0 ) + 1 //this will look for the value stored in freq[key] and add one to it if it has a value, but if no value is found (undefined), it will set it to 0 and then add one to it
 ```
